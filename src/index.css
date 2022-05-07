@@ -1,13 +1,241 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-align: center;
+	justify-content: center;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
+}
+
+.navBar {
+	margin: 27px auto 0;
+	position: relative;
+	background-color: white;
+	border-radius: 8px;
+	font-size: 0;
+	margin-bottom: 2%;
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.nav_main {
+	display: flex;
+	justify-content: space-around;
+	padding: 0% 2%;
+	color: #211b19;
+}
+
+.navlink {
+	line-height: 50px;
+	height: 100%;
+	font-size:18px;
+	font-weight: 500;
+	display: inline-block;
+	position: relative;
+	font-family:"Jost", sans-serif;
+	z-index: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: black;
+	cursor: pointer;
+	padding: 0% 10px;
+}
+.navlink:hover{
+	color: #31d4ed;
+}
+.img1{
+	width: 100%;
+	height:20%;
+}
+.input {
+	flex-grow: 1;
+	width:80%;
+	text-transform: capitalize;
+	font-size: 1rem;
+	line-height: 2.4rem;
+	vertical-align: middle;
+	padding: 5px 14px;
+	margin-bottom: 20px;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#notfound {
+	position: relative;
+	height: 100vh;
+}
+
+#notfound .notfound {
+	position: absolute;
+	left: 50%;
+	top: 30%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.notfound {
+	max-width: 520px;
+	width: 100%;
+	line-height: 1.4;
+	text-align: center;
+}
+
+.notfound .notfound-404 {
+	position: relative;
+	height: 200px;
+	margin: 0px auto 20px;
+	z-index: -1;
+}
+
+.notfound .notfound-404 h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 236px;
+	font-weight: 200;
+	margin: 0px;
+	color: #211b19;
+	text-transform: uppercase;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.notfound .notfound-404 h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 28px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #211b19;
+	background: #fff;
+	padding: 10px 5px;
+	margin: auto;
+	display: inline-block;
+	position: absolute;
+	bottom: 0px;
+	left: 0;
+	right: 0;
+}
+
+.a {
+	font-family: 'Montserrat', sans-serif;
+	border: none;
+	border-radius: 10px;
+	display: inline-block;
+	font-weight: 700;
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 13px 23px;
+	background: #ff6300;
+	font-size: 18px;
+	-webkit-transition: 0.2s all;
+	transition: 0.2s all;
+}
+
+.a:hover {
+	color: #ff6300;
+	background: #211b19;
+}
+
+@media only screen and (max-width: 767px) {
+	.notfound .notfound-404 h1 {
+		font-size: 148px;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.notfound .notfound-404 {
+		height: 148px;
+		margin: 0px auto 10px;
+	}
+
+	.notfound .notfound-404 h1 {
+		font-size: 86px;
+	}
+
+	.notfound .notfound-404 h2 {
+		font-size: 16px;
+	}
+
+	.notfound a {
+		padding: 7px 15px;
+		font-size: 14px;
+	}
+}
+.Logo img {
+	width: 90x;
+	height: 50px;
+}
+.bgimg{
+	background:url("https://images.unsplash.com/photo-1591123120675-6f7f1aae0e5b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80") no-repeat;
+	width: 100%;
+	height:70vh;
+	background-size:cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: rgba(17, 17, 17, 0.627);
+	margin-bottom: 50px;
+	line-height: 2.2;
+	
+}
+.brhr{
+	font-size:50px;
+	
+}
+.card_main{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-bottom: 40px;
+}
+.Appli{
+	background:url("https://blogmedia.evbstatic.com/wp-content/uploads/wpmulti/sites/12/2019/02/copywriting-conferences-1.jpg");
+	background-size:cover;
+	padding: 60px 0px;
+	display: flex;
+	justify-content: center;
+}
+.Appl{
+	padding: 60px 0px;
+	display: flex;
+	justify-content: center;
+	
+}
+
+.from{
+	background-color: white;
+	width:35%;
+	height:auto;
+	padding: 20px 0px;
+	box-sizing: border-box;
+	border-radius: 20px;
+}
+footer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: small;
+	font-weight: 400;
+	padding: 20px 0px;
+}
+.pay{
+	background: url("https://images.unsplash.com/photo-1628527304948-06157ee3c8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+	background-size:cover;
+	padding: 60px 0px;
 }
