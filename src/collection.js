@@ -2,11 +2,13 @@
 function Collection() {
     return (
         <>
-            <h3>Student Fee collection</h3>
+            <div className="pay" >
             <div class="modal-dialog">
-                <div class="modal-content">
+                <div class="modal-content content">
+                <h1 style={{marginTop:"30px"}}>Student Fee collection</h1>
                     <div class="modal-body ">
                         <div class="d-flex justify-content-between align-items-center">
+                        {/* <h3 style={{marginTop:"30px"}}>Student Fee collection</h3> */}
                             <span class="text-uppercase">Pay Now</span>
                             <i class="fa fa-close close" data-dismiss="modal"></i>
                         </div>
@@ -108,12 +110,13 @@ function Collection() {
                             </div>
                             <hr class="mr-2 mt-4"/>
                             <div class="mt-3 mr-2 d-flex justify-content-end align-items-center">
-                                <a href="/" class="cancel">Cancel</a>
-                                <button class=" ml-2 btn btn-primary pay">PAY NOW</button>
+                                <a href="/" class="btn btn-danger">Cancel</a>
+                                <button class="ml-2 btn btn-success">PAY NOW</button>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
                 </>
                 )

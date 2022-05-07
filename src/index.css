@@ -15,12 +15,11 @@ code {
 }
 
 .navBar {
-	margin: 27px auto 0;
+	margin:1% 1%;
 	position: relative;
 	background-color: white;
 	border-radius: 8px;
 	font-size: 0;
-	margin-bottom: 2%;
 	display: flex;
 	justify-content: space-between;
 
@@ -29,7 +28,7 @@ code {
 .nav_main {
 	display: flex;
 	justify-content: space-around;
-	padding: 0% 2%;
+	padding: 0% 1%;
 	color: #211b19;
 }
 
@@ -50,7 +49,7 @@ code {
 	padding: 0% 10px;
 }
 .navlink:hover{
-	color: #31d4ed;
+	color: #28a745;
 }
 .img1{
 	width: 100%;
@@ -64,7 +63,7 @@ code {
 	line-height: 2.4rem;
 	vertical-align: middle;
 	padding: 5px 14px;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 }
 
 * {
@@ -96,7 +95,7 @@ code {
 .notfound .notfound-404 {
 	position: relative;
 	height: 200px;
-	margin: 0px auto 20px;
+	margin: 0px auto 30px;
 	z-index: -1;
 }
 
@@ -152,13 +151,168 @@ code {
 	background: #211b19;
 }
 
-@media only screen and (max-width: 767px) {
-	.notfound .notfound-404 h1 {
-		font-size: 148px;
-	}
+.Logo img {
+	width: 90x;
+	height: 50px;
+}
+.bgimg{
+	background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("https://images.unsplash.com/photo-1591123120675-6f7f1aae0e5b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80") no-repeat ;
+	width: 100%;
+	height:70vh;
+	background-size:cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: rgba(255, 246, 246, 0.944);
+	margin-bottom: 50px;
+	line-height: 2.2;
+	
+}
+.brhr{
+	font-size:50px;
+	
+}
+.card_main{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-bottom: 50px;
+}
+.Appli{
+	background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url("https://blogmedia.evbstatic.com/wp-content/uploads/wpmulti/sites/12/2019/02/copywriting-conferences-1.jpg");
+	background-size:cover;
+	padding: 60px 0px;
+	display: flex;
+	justify-content: center;
+}
+.card1{
+	padding:14% 8%;
+	justify-content:"center";
+}
+.Appl{
+	padding: 60px 0px;
+	display: flex;
+	justify-content: center;
+	
 }
 
-@media only screen and (max-width: 480px) {
+.form{
+	background-color: white;
+	width:35%;
+	height:auto;
+	padding: 20px 0px;
+	box-sizing: border-box;
+	border-radius: 20px;
+}
+footer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size:large;
+	font-weight: 400;
+	padding: 20px 0px;
+}
+footer p{
+	margin: 0%;
+}
+.logo2{
+	display: none;
+}
+.pay{
+	background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://images.unsplash.com/photo-1628527304948-06157ee3c8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+	background-size:cover;
+	padding:20px 0px;
+}
+.card0{
+	width:26%;
+	justify-content:"center";
+}
+.content{
+	box-sizing: border-box;
+	border-radius: 20%;
+	width: 80%;
+}
+.dropdown{
+	display: none;
+}
+  
+  
+  .slide{
+	display: none;
+  }
+  .active{
+
+  }
+@media only screen and (max-width:1000px) {
+	.form{
+		background-color: white;
+		width:50%;
+		height:auto;
+		padding: 20px 0px;
+		box-sizing: border-box;
+		border-radius: 20px;
+	}
+
+}
+
+@media only screen and (max-width:850px) {
+	 .form{
+		width:80%;
+	}
+	.dropdown{
+		display:inline;
+	}
+	.drop1{
+		display: none;
+	}
+	.nav_main{
+		display: flex;
+		flex-direction: column;
+	}
+	.card_main{
+		display: flex;
+		flex-direction:column;
+		justify-content:center;
+		align-items: center;
+	}
+	.logo1{
+		display: none;
+	}
+	.logo2{
+		display: inline;
+	}
+	.logo2 > img{
+		
+		padding-left:20px;
+	}
+	.card0{
+		width: 80%;
+		margin-bottom: 5%;
+	}
+	.brhr{
+		font-size: 30px;
+	}
+
+}
+
+@media only screen and (max-width: 580px) {
+	.form{
+		background-color: white;
+		width:80%;
+		height:auto;
+		padding: 20px 0px;
+		box-sizing: border-box;
+		border-radius: 20px;
+		font-size: medium;
+		
+	}
+	.brhr{
+		font-size:20px;
+	}
+	footer > p{
+		font-size: smaller;
+	}
+
 	.notfound .notfound-404 {
 		height: 148px;
 		margin: 0px auto 10px;
@@ -176,66 +330,4 @@ code {
 		padding: 7px 15px;
 		font-size: 14px;
 	}
-}
-.Logo img {
-	width: 90x;
-	height: 50px;
-}
-.bgimg{
-	background:url("https://images.unsplash.com/photo-1591123120675-6f7f1aae0e5b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80") no-repeat;
-	width: 100%;
-	height:70vh;
-	background-size:cover;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	color: rgba(17, 17, 17, 0.627);
-	margin-bottom: 50px;
-	line-height: 2.2;
-	
-}
-.brhr{
-	font-size:50px;
-	
-}
-.card_main{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	margin-bottom: 40px;
-}
-.Appli{
-	background:url("https://blogmedia.evbstatic.com/wp-content/uploads/wpmulti/sites/12/2019/02/copywriting-conferences-1.jpg");
-	background-size:cover;
-	padding: 60px 0px;
-	display: flex;
-	justify-content: center;
-}
-.Appl{
-	padding: 60px 0px;
-	display: flex;
-	justify-content: center;
-	
-}
-
-.from{
-	background-color: white;
-	width:35%;
-	height:auto;
-	padding: 20px 0px;
-	box-sizing: border-box;
-	border-radius: 20px;
-}
-footer{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-size: small;
-	font-weight: 400;
-	padding: 20px 0px;
-}
-.pay{
-	background: url("https://images.unsplash.com/photo-1628527304948-06157ee3c8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
-	background-size:cover;
-	padding: 60px 0px;
 }

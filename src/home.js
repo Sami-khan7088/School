@@ -5,45 +5,45 @@ function Home() {
         <div className="bgimg">
         <div>
             <h1 className="brhr">Offering accees to high-quality<br/> education for everyone</h1>
-            <NavLink   to="/">
-                        <button className="btn btn-outline-success">Gallery</button>
+            <NavLink   to="/School">
+                        <button className="btn btn-success " style={{padding:"10px 16px",fontSize:"18px"}}>GALLERY</button>
             </NavLink>
                     </div>
         </div>
         <div className="card_main">
-        <div class="card" style={{width:'350px',justifyContent:"center"}} >
-        <div  style={{justifyContent:"center",padding:"40px"}}>
-        <img src="https://demo.goodlayers.com/kingster/homepages/onlineacademy/wp-content/uploads/sites/4/2020/06/col-service-1.png" style={{width:"80px",height:"80px",marginTop:"20px"}} className="card-img-top" alt="img is here" />
+        <div class="card card0"  >
+        <div className="card1" >
+        <img src="https://demo.goodlayers.com/kingster/homepages/onlineacademy/wp-content/uploads/sites/4/2020/06/col-service-1.png" style={{width:"80px",height:"80px"}} className="card-img-top" alt="img is here" />
         <div className="card-body">
         </div>
           <h5 className="card-title">online Courses</h5>
           <p className="card-text">Join the community of modern thinking students. Highly qualified teacher and millions of people learning.</p>
-          <a href="www.google.com" className="btn btn-outline-success">Courses</a>
+          <NavLink className="btn btn-success" to="/">Courses</NavLink>
         </div>
       </div>
-      <div class="card" style={{width:'350px',justifyContent:"center"}} >
-        <div  style={{justifyContent:"center",padding:"40px"}}>
-        <img src="https://demo.goodlayers.com/kingster/homepages/onlineacademy/wp-content/uploads/sites/4/2020/06/col-service-2.png" style={{width:"80px",height:"80px",marginTop:"20px"}} className="card-img-top" alt="img is here" />
+      <div class="card card0"  >
+        <div   className="card1">
+        <img src="https://demo.goodlayers.com/kingster/homepages/onlineacademy/wp-content/uploads/sites/4/2020/06/col-service-2.png" style={{width:"80px",height:"80px"}} className="card-img-top" alt="img is here" />
         <div className="card-body">
         </div>
           <h5 className="card-title">Lifetime Access</h5>
           <p className="card-text">Join the community of modern thinking students. Highly qualified teacher and millions of people learning.</p>
-          <a href="www.google.com" className="btn btn-outline-success"> Access</a>
+          <NavLink className="btn btn-success" to="/"> Access</NavLink>
         </div>
       </div>
-      <div class="card" style={{width:'350px',justifyContent:"center"}} >
-        <div  style={{justifyContent:"center",padding:"40px"}}>
-        <img src="https://demo.goodlayers.com/kingster/homepages/onlineacademy/wp-content/uploads/sites/4/2020/06/col-service-3.png" style={{width:"80px",height:"80px",marginTop:"20px"}} className="card-img-top" alt="img is here" />
+      <div class="card card0" >
+        <div  className="card1" >
+        <img src="https://demo.goodlayers.com/kingster/homepages/onlineacademy/wp-content/uploads/sites/4/2020/06/col-service-3.png" style={{width:"80px",height:"80px"}} className="card-img-top" alt="img is here" />
         <div className="card-body">
         </div>
           <h5 className="card-title">Online Courses</h5>
           <p className="card-text">Join the community of modern thinking students. Highly qualified teacher and millions of people learning.</p>
-          <a href="www.google.com" className="btn btn-outline-success">Online Courses</a>
+          <NavLink className="btn btn-success" to="/">Online Courses</NavLink>
         </div>
       </div>
       </div>
       <div className="Appli">
-      <div className="from">
+      <div className="form">
       <h1 style={{marginBottom:"10px",}}> Application Form</h1>
         <form>
             <div>
@@ -61,16 +61,17 @@ function Home() {
             <div>
                 <input type="text" className="input" placeholder="Address"></input>
             </div>
-            <button className="btn btn-outline-success">Submit Your Application</button>
+            <button className="btn btn-success">Submit Your Application</button>
         </form>
       </div>
       </div>
-      <h3 style={{marginTop:"30px"}}>Student Fee collection</h3>
       <div className="pay" style={{marginTop:"40px"}}>
             <div class="modal-dialog">
-                <div class="modal-content">
+                <div class="modal-content content">
+                <h1 style={{marginTop:"30px"}}>Student Fee collection</h1>
                     <div class="modal-body ">
                         <div class="d-flex justify-content-between align-items-center">
+                        {/* <h3 style={{marginTop:"30px"}}>Student Fee collection</h3> */}
                             <span class="text-uppercase">Pay Now</span>
                             <i class="fa fa-close close" data-dismiss="modal"></i>
                         </div>
@@ -172,8 +173,8 @@ function Home() {
                             </div>
                             <hr class="mr-2 mt-4"/>
                             <div class="mt-3 mr-2 d-flex justify-content-end align-items-center">
-                                <a href="/" class="cancel">Cancel</a>
-                                <button class=" ml-2 btn btn-primary pay">PAY NOW</button>
+                                <a href="/" class="btn btn-danger">Cancel</a>
+                                <button class="ml-2 btn btn-success">PAY NOW</button>
                             </div>
                         </div>
                     </div>
@@ -181,7 +182,7 @@ function Home() {
             </div>
       </div>
       <footer>
-              <h4>Copyright All Right Reserved 2022, GoodLayers</h4>
+              <p >Copyright All Right Reserved 2022, GoodLayers</p>
       </footer>
       </>
     )

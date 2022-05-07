@@ -1,7 +1,6 @@
-import { useNavigate } from "react-router-dom";
+import {NavLink} from "react-router-dom";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
 function Error() {
-	const history = useNavigate()
 	return (
 		<>
 			<div id="notfound">
@@ -10,7 +9,9 @@ function Error() {
 						<h1>Oops!</h1>
 						<h2>404 - The Page can't be found</h2>
 					</div>
-					<button className="btn btn-outline-success" onClick={() => { history('/') }}>HomePage</button>
+					<NavLink  to="/School">
+					<button className="btn btn-outline-success" >HomePage</button>
+					</NavLink>
 				</div>
 			</div>
 		</>

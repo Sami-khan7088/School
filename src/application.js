@@ -1,8 +1,8 @@
 function Application(){
     return(
         <>
-        <div className="Appl">
-      <div className="from">
+        <div className="Appli">
+      <div className="form">
       <h1 style={{marginBottom:"10px",}}> Application Form</h1>
         <form>
             <div>
@@ -20,7 +20,7 @@ function Application(){
             <div>
                 <input type="text" className="input" placeholder="Address"></input>
             </div>
-            <button className="btn btn-outline-success">Submit Your Application</button>
+            <button className="btn btn-success">Submit Your Application</button>
         </form>
       </div>
       </div>
